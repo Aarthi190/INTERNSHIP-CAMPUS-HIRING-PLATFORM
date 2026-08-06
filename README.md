@@ -4,7 +4,7 @@ A modern, secure, and modular internship and campus hiring platform built with S
 
 ## 👨‍💻 Author
 
-- **Name:** Deepthi fonsiya Zenofar S
+- **Name:** Aarthika K
 - **Department:** B.Tech IT
 - **Year:** III (Pre-Final Year)
 - **College Name:** JJ College Of Engineering And Technology
