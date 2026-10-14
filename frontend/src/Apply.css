@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 48% 52%;
+  font-family: "DM Sans", sans-serif;
+  background: #ffffff;
+  color: #18243b;
+}
+
+/* LEFT SIDE */
+
+.register-left {
+  position: relative;
+  min-height: 100vh;
+  padding: 38px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      115deg,
+      rgba(9, 30, 66, 0.94),
+      rgba(18, 65, 120, 0.86),
+      rgba(35, 108, 176, 0.68)
+    ),
+    url("/office-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.left-overlay {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  right: -130px;
+  top: 22%;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.left-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+.brand {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #1558b0;
+  font-family: "Manrope", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.13);
+}
+
+.brand h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  line-height: 1.55;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 510px;
+  margin: 55px 0;
+}
+
+.hero-tag,
+.form-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero-tag {
+  padding: 9px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.27);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0eeff;
+}
+
+.hero-content h1 {
+  margin: 25px 0 15px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(37px, 4.1vw, 56px);
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+  color: #9ed1ff;
+}
+
+.hero-line {
+  width: 70px;
+  height: 4px;
+  margin: 23px 0;
+  border-radius: 10px;
+  background: #9ed1ff;
+}
+
+.hero-description {
+  max-width: 410px;
+  color: #e0eafa;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.benefit-list {
+  display: grid;
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.benefit-check {
+  flex-shrink: 0;
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.13);
+  color: #b8e1ff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.benefit-item h3 {
+  margin: 1px 0 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.benefit-item p {
+  max-width: 330px;
+  margin: 0;
+  color: #d6e5f7;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.left-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #d5e5f8;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* RIGHT SIDE */
+
+.register-right {
+  min-width: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 30px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(223, 237, 255, 0.5),
+      transparent 32%
+    ),
+    #ffffff;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 460px;
+  margin: auto;
+}
+
+.mobile-brand {
+  display: none;
+}
+
+.form-heading {
+  margin-bottom: 23px;
+}
+
+.form-tag {
+  margin-bottom: 10px;
+  color: #2563c9;
+}
+
+.form-heading h2 {
+  margin: 0 0 8px;
+  font-family: "Manrope", sans-serif;
+  color: #14233d;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.form-heading p {
+  margin: 0;
+  color: #78859a;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 10px;
+  color: #34435b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ROLE SELECTION */
+
+.role-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 23px;
+}
+
+.role-option {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 10px;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.role-option:hover {
+  border-color: #8bb6f4;
+  background: #f8fbff;
+}
+
+.role-option.active {
+  border-color: #3478e5;
+  background: #f0f6ff;
+  box-shadow: 0 0 0 2px rgba(52, 120, 229, 0.07);
+}
+
+.role-icon {
+  font-size: 22px;
+}
+
+.role-option strong,
+.role-option small {
+  display: block;
+}
+
+.role-option strong {
+  margin-bottom: 4px;
+  color: #24334c;
+  font-size: 11px;
+}
+
+.role-option small {
+  color: #8290a4;
+  font-size: 9px;
+}
+
+.role-radio {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border: 1px solid #cdd6e3;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.role-option.active .role-radio {
+  border-color: #3478e5;
+  background: #3478e5;
+}
+
+/* FORM FIELDS */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 13px;
+}
+
+.form-group {
+  min-width: 0;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #34435b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  min-width: 0;
+  height: 43px;
+  padding: 0 12px;
+  border: 1px solid #e0e6ef;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #263750;
+  font-family: inherit;
+  font-size: 11px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #a1acbd;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4285ed;
+  box-shadow: 0 0 0 3px rgba(66, 133, 237, 0.1);
+}
+
+.field-hint {
+  display: block;
+  margin-top: 6px;
+  color: #8491a5;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* SUBMIT BUTTON */
+
+.create-account-btn {
+  width: 100%;
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 23px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #2368d8, #3988f5);
+  box-shadow: 0 7px 18px rgba(35, 104, 216, 0.2);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.create-account-btn span {
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.create-account-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(35, 104, 216, 0.28);
+}
+
+.create-account-btn:hover span {
+  transform: translateX(4px);
+}
+
+.create-account-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* MESSAGES */
+
+.form-message {
+  margin-top: 14px;
+  padding: 11px 13px;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.form-message.success {
+  border: 1px solid #b6e5cb;
+  background: #edfff4;
+  color: #167344;
+}
+
+.form-message.error {
+  border: 1px solid #f3c4c4;
+  background: #fff2f2;
+  color: #b42323;
+}
+
+/* FOOTER LINKS */
+
+.login-link {
+  margin-top: 19px;
+  color: #78859a;
+  text-align: center;
+  font-size: 11px;
+}
+
+.login-link a {
+  color: #2469d3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  display: block;
+  width: fit-content;
+  margin: 17px auto 0;
+  color: #53637a;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-home span {
+  margin-right: 5px;
+}
+
+.back-home:hover {
+  color: #2469d3;
+}
+
+.security-note {
+  margin: 20px 0 0;
+  color: #a0aaba;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (min-width: 1500px) {
+  .register-card {
+    max-width: 490px;
+  }
+
+  .register-right {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .register-page {
+    grid-template-columns: 42% 58%;
+  }
+
+  .register-left {
+    padding: 32px 7%;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .register-right {
+    padding: 30px 24px;
+  }
+
+  .role-option {
+    gap: 6px;
+    padding: 12px 7px;
+  }
+}
+
+@media (max-width: 760px) {
+  .register-page {
+    display: block;
+  }
+
+  .register-left {
+    min-height: auto;
+    padding: 25px 24px;
+  }
+
+  .brand {
+    margin-bottom: 30px;
+  }
+
+  .hero-content {
+    margin: 15px 0 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 39px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .benefit-list {
+    gap: 18px;
+    margin-top: 27px;
+  }
+
+  .left-footer {
+    padding-top: 10px;
+  }
+
+  .register-right {
+    min-height: auto;
+    padding: 35px 22px;
+  }
+
+  .register-card {
+    max-width: 500px;
+  }
+
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+    color: #18345c;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .mobile-brand .brand-icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e2eaf5;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .register-left {
+    padding: 23px 19px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .register-right {
+    padding: 30px 17px;
+  }
+
+  .form-heading h2 {
+    font-size: 27px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group,
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .role-option {
+    gap: 6px;
+    padding: 11px 7px;
+  }
+
+  .role-icon {
+    font-size: 18px;
+  }
+
+  .role-option strong {
+    font-size: 10px;
+  }
+
+  .role-option small {
+    font-size: 8px;
+  }
+}

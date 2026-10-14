@@ -1,0 +1,108 @@
+.dashboard-page {
+min-height: 100vh;
+background: #f4f7fc;
+font-family: Arial, sans-serif;
+color: #1e293b;
+}
+
+.dashboard-navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 5%;
+background: #ffffff;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.dashboard-navbar h2 {
+margin: 0;
+color: #2563eb;
+}
+
+.dashboard-nav-links {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.dashboard-nav-links a {
+text-decoration: none;
+color: #334155;
+font-weight: 600;
+}
+
+.dashboard-nav-links a:hover {
+color: #2563eb;
+}
+
+.dashboard-welcome {
+margin: 35px 5%;
+padding: 40px;
+border-radius: 18px;
+color: white;
+background: linear-gradient(135deg, #2563eb, #6366f1);
+}
+
+.dashboard-welcome h1 {
+margin-top: 0;
+font-size: 32px;
+}
+
+.dashboard-welcome p {
+line-height: 1.7;
+max-width: 650px;
+}
+
+.dashboard-cards {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+margin: 35px 5%;
+}
+
+.dashboard-card {
+background: white;
+padding: 28px;
+border-radius: 14px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+margin-top: 0;
+color: #1d4ed8;
+}
+
+.dashboard-card p {
+color: #64748b;
+line-height: 1.6;
+}
+
+.dashboard-card a {
+display: inline-block;
+margin-top: 10px;
+padding: 11px 18px;
+border-radius: 8px;
+background: #2563eb;
+color: white;
+text-decoration: none;
+}
+
+.dashboard-card a:hover {
+background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+.dashboard-cards {
+grid-template-columns: 1fr;
+}
+
+.dashboard-welcome {
+padding: 25px;
+}
+
+.dashboard-welcome h1 {
+font-size: 25px;
+}
+}
