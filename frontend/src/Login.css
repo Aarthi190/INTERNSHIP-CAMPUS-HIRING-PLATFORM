@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT PHOTO SECTION */
+
+.login-left {
+  width: 55%;
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(10, 35, 65, 0.45),
+      rgba(10, 35, 65, 0.65)
+    ),
+    url("/office-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  color: white;
+}
+
+.login-overlay {
+  max-width: 500px;
+}
+
+.login-overlay h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+  color: white;
+}
+
+.login-overlay h2 {
+  font-size: 46px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.login-overlay p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #f1f5f9;
+}
+
+/* RIGHT LOGIN SECTION */
+
+.login-right {
+  width: 45%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 25px;
+  background: #f8fafc;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-box h2 {
+  font-size: 32px;
+  color: #172554;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  color: #64748b;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 9px;
+}
+
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 22px;
+  border: 1px solid #dbe3ef;
+  border-radius: 9px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background: #1d4ed8;
+}
+
+.register-text {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.register-text a {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-home {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  color: #475569;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back-home:hover {
+  color: #2563eb;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-left {
+    width: 100%;
+    min-height: 280px;
+    padding: 30px;
+  }
+
+  .login-overlay h1 {
+    margin-bottom: 30px;
+  }
+
+  .login-overlay h2 {
+    font-size: 32px;
+  }
+
+  .login-overlay p {
+    font-size: 15px;
+  }
+
+  .login-right {
+    width: 100%;
+    min-height: auto;
+    padding: 35px 20px;
+  }
+
+  .login-box h2 {
+    font-size: 28px;
+  }
+}
